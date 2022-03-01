@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class SimlTest {
@@ -16,4 +17,10 @@ public class SimlTest {
         $("[name=q]").setValue("selenide").pressEnter();
         $("[id=search]").shouldHave(text("selenide.org"));
     }
+
+    @Test
+    void assertTrueTest() {
+        assertTrue(3 > 2);
+    }
+
 }
