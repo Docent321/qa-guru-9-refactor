@@ -16,8 +16,8 @@ public class SimlTest {
     @Test
     void selenideSearchTest() {
         open("https://www.google.com/");
-        $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=search]").shouldHave(text("selenide.org"));
+        $("[name=q]").setValue("pikabu").pressEnter();
+        $("[id=search]").shouldHave(text("pikabu.ru"));
     }
 
     @Test
