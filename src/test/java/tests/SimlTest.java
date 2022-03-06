@@ -1,4 +1,4 @@
-package tests;
+package tests;//commit by Lesson 8
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
